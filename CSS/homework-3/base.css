@@ -28,8 +28,9 @@ body {
     font-size: 14px;
 }
 
-a {
+a:link, a:visited {
     text-decoration: none;
+    color: var(--gray2);
 }
 
 ul {
