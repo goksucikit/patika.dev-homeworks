@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #d3d2d2;
+}
+
+/* HOME PAGE CSS */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(5px);
+}
+
+
+.carousel-inner {
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.58);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.home-carousel img {
+    border-radius: 8px;
+    filter: blur(2px);
+}
+
+.carousel-caption-home {
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+
+.crs-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+    .submit {
+        width: 100%;
+    }
+
+    .nav-link {
+        text-align: center;
+        border-bottom: 1px solid #b6b2b2;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .crs-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* HOME PAGE CSS END */
+
+/* SHOPS CSS START */
+
+.card-body {
+    margin: 0.3rem;
+    padding: 0.3rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin-top: .5rem;
+    }
+    
+
+    .card-btns a {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* SHOPS CSS END */
+
+
+/* ABOUT-US CSS */
+
+.about_us-content p {
+    text-align: justify;
+
+}
+
+.img_about {
+    width: 40vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .about_us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_about {
+        width: 100vw;
+        height: 40vh;
+    }
+}
+/* ABOUT-US CSS END */
+
+
