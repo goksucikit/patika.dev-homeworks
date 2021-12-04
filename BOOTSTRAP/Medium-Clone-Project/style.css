@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Overpass:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.bg-blue {
+    background-color: #C4E2FF;
+}
+
+.border-bottom-dark {
+    border-bottom: 1px solid rgba(41, 41, 41, 1);
+}
+
+/* NAVBAR START */
+.navbar {
+    height: 75px;
+}
+
+.navbar-nav > a {
+    font-family: 'Martel Sans', sans-serif;
+    text-align: center;
+    font-size: .85rem;
+}
+
+/* NAVBAR END */
+
+/* HEADER START */
+.full-header {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: -0.05em;
+    line-height: 74px;
+    font-size: 60px;
+    
+}
+
+.open-sentence {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.replaced__open-sentence {
+    display: none;
+}
+
+.start__writing {
+    background-color: #fff;
+    
+}
+
+.start__writing:hover {
+    background-color: #fff;
+    color: rgba(41, 41, 41, 1);
+}
+
+.short-header {
+    display: none;
+}
+
+.replaced__short-header {
+    display: none;
+}
+
+@media screen and (max-width: 668px) {
+
+    .short-header {
+        display: block;
+        font-family: 'Libre Baskerville', serif;
+        letter-spacing: -0.05em;
+        line-height: 54px;
+        font-size: 40px;
+    }
+    .full-header {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 580px) {
+    .main-image {
+        display: none;
+    }
+
+    .header-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-content {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .header-content {
+        background-image: url(./assets/home-quote-image.png);
+        background-repeat: no-repeat;
+        background-size: 575px;
+    }
+    
+    .short-header {
+        display: none;
+    }
+
+    .replaced__short-header {
+        display: block;
+        font-family: 'Libre Baskerville', serif;
+        letter-spacing: -0.05em;
+        line-height: 54px;
+        font-size: 40px;
+    }
+
+    .open-sentence {
+        display: none;
+    }
+
+    .replaced__open-sentence {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1rem;
+    }
+
+    
+
+    .main-header {
+        padding-left: 10px !important;
+    }
+}
+
+/* HEADER END */
+
+/* TRENDING SECTION */
+
+article {
+    margin-bottom: 2rem;
+}
+
+.fa-arrow-up {
+    font: 700 14px;
+    padding: 4px;
+
+}
+
+.trendings__main-header {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.083em;
+}
+
+
+.trending__numbers {
+
+    font: 700 30px "Roboto", "Helvetica Neue", Helvetica;
+    color: #e6e6e6;
+}
+
+.trending__author__image img {
+    width: 20px;
+    height: 20px;
+}
+
+.trending__author__name a{   
+    font: bolder 13px 'Libre Baskerville', sans-serif;
+    letter-spacing: -0.023em;
+    color: #292929;
+}
+
+.trending__article__header {
+    font: bold 15px 'Roboto', "Helvetica Neue", Helvetica;
+    color: #292929;
+}
+
+.list-inline li {
+    font: 13px 'Roboto', "Helvetica Neue", Helvetica;
+    color: #757575;
+    margin: 0;
+    padding: 0;
+}
+
+/* TRENDING SECTION END */
+
+/* BOTTOM SECTION (ARTICLES) */
+
+.articles-border-top {
+    border-top: 1px solid rgba(230, 230, 230, 1);
+}
+
+.discover__main-header {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.083em;
+}
+
+.list-inline-item a {
+    font: 300 13px "Roboto", "Helvetica Neue", Helvetica;
+    border-radius: 0%;
+}
+
+.bottom__articles-user img {
+    width: 20px;
+    height: 20px;
+}
+
+.article__intro {
+    margin: 0;
+}
+
+.article__header {
+    font: bold 22px 'Roboto', "Helvetica Neue", Helvetica;
+    color: #292929;
+}
+
+.article__header-intro {
+    font: 400 16px 'Roboto', "Helvetica Neue", Helvetica;
+    color: #757575;
+}
+
+.article__header-button {
+    border: 0px solid transparent;
+    border-radius: 3em / 6em;
+    padding: 5px 12px;
+    background-color: #f2f2f2;
+    color: #757575;
+}
+
+.article__header-button:hover {
+    transition: 300ms ease;
+    background-color: #c0bebe;
+    color: #fff;
+}
+
+.fa-star {
+    color: #757575;
+}
+
+.fa-bookmark {
+    font-size: 20px;
+    padding-left: 1.3rem;
+    color:rgba(41, 41, 41, 1)
+}
+
+.fa-ellipsis-h {
+    font-size: 20px;
+    color: rgba(41, 41, 41, 1)
+}
+
+.btn-outline-secondary {
+    padding: 10px 14px;
+    border: 1px solid #b3b1b1;
+    
+}
+
+/* BOTTOM SECTION END */
